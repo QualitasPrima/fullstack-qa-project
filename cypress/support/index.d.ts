@@ -34,6 +34,14 @@ declare global {
        * @param data - The student data object
        */
       submitAndVerify(data: StudentData): Chainable<Subject>;
+
+      /**
+       * Custom API request command with automatic API key header.
+       * @param method HTTP method ("GET", "POST", "PUT", "DELETE")
+       * @param endpoint API endpoint (relative path)
+       * @param body Optional request payload
+       */
+      api(method: string, endpoint: string, body?: object): Chainable<any>;
     }
   }
 }

@@ -5,4 +5,8 @@ export default defineConfig({
     baseUrl: "https://demoqa.com",
     setupNodeEvents(on, config) {},
   },
+  env: {
+    reqresApiKey: "reqres-free-v1",
+    reqresBaseUrl: "https://reqres.in/api",
+  },
 });

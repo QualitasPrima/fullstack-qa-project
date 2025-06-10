@@ -33,3 +33,35 @@ Cypress.Commands.add("submitAndVerify", (data) => {
   formPage.verifySubmittedData(data); // Verify that data in the modal matches input
   formPage.closeModal(); // Close the confirmation modal
 });
+
+/**
+ * Custom Cypress command to perform an API request to the ReqRes API.
+ * This wraps cy.request() and auto-includes:
+ * - the base API URL from Cypress env (`reqresBaseUrl`)
+ * - an optional API key header (`reqresApiKey`)
+ *
+ * @param method - HTTP method ("GET", "POST", "PUT", "DELETE")
+ * @param endpoint - API endpoint path (e.g., "/users/2")
+ * @param body - Optional request body (for POST/PUT)
+ */
+Cypress.Commands.add("api", (method, endpoint, body = null) => {
+  const baseUrl = Cypress.env("reqresBaseUrl") || "";
+  const url = `${baseUrl}${endpoint}`;
+
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+  };
+
+  const apiKey = Cypress.env("reqresApiKey");
+  if (apiKey) {
+    headers["x-api-key"] = apiKey;
+  }
+
+  return cy.request({
+    method,
+    url,
+    body,
+    headers,
+    failOnStatusCode: false,
+  });
+});
