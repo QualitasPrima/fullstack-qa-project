@@ -58,36 +58,40 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
 ├── README.md                 # This main project guide
 └── package.json
 ```
+---
+
 ## ⚙️ Setup & Test Execution
 
 **Prerequisites:**
 -   [Node.js](https://nodejs.org/en/) (LTS version)
 -   [Git](https://git-scm.com/downloads)
 
-### 1. Installation
+1.  **Installation**
+    ```bash
+    # Clone the repository
+    git clone [https://github.com/QualitasPrima/fullstack-qa-project.git](https://github.com/QualitasPrima/fullstack-qa-project.git)
 
-# Clone the repository
-git clone https://github.com/QualitasPrima/fullstack-qa-project.git
+    # Navigate into the project directory
+    cd fullstack-qa-project
 
-# Navigate into the project directory
-cd fullstack-qa-project
+    # Install dependencies
+    npm install
+    ```
 
-# Install dependencies
-npm install
+2.  **Running Tests**
+    ```bash
+    # Open the interactive Cypress Test Runner
+    npx cypress open
 
-### 2. Running Tests
+    # Run all tests headlessly in the terminal (ideal for CI)
+    npx cypress run
 
-# Open the interactive Cypress Test Runner to run tests individually
-npx cypress open
+    # Run only the UI test suite
+    npx cypress run --spec "cypress/e2e/ui/**/*.cy.ts"
 
-# Run all tests headlessly in the terminal (ideal for CI)
-npx cypress run
-
-# Run only the UI test suite
-npx cypress run --spec "cypress/e2e/ui/**/*.cy.ts"
-
-# Run only the API test suite
-npx cypress run --spec "cypress/e2e/api/**/*.cy.ts"
+    # Run only the API test suite
+    npx cypress run --spec "cypress/e2e/api/**/*.cy.ts"
+    ```
 
 ### 📄 Assignment Artifacts
 Please find the detailed deliverables for each assignment task below:
