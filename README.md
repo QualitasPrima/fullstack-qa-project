@@ -4,9 +4,9 @@
 
 ## 🚀 Project Objective
 The goal of this project is to showcase a professional, scalable, and maintainable approach to software testing, fulfilling all requirements of the home assignment:
-**Task 1: Test Checklist:** A detailed manual test checklist for the DemoQA Practice Form.
-**Task 2: Bug Report:** A professionally formatted bug report for a given scenario.
-**Task 3: Test Automation:** An advanced automation suite using Cypress, featuring both E2E UI tests for the DemoQA form and a separate suite of API tests for the `reqres.in` API.
+* **Task 1: Test Checklist:** A detailed manual test checklist for the DemoQA Practice Form.
+* **Task 2: Bug Report:** A professionally formatted bug report for a given scenario.
+* **Task 3: Test Automation:** An advanced automation suite using Cypress, featuring both E2E UI tests for the DemoQA form and a separate suite of API tests for the `reqres.in` API.
 
 ---
 
