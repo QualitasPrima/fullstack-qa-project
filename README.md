@@ -69,7 +69,7 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
 1.  **Installation**
     ```bash
     # Clone the repository
-    git clone [https://github.com/QualitasPrima/fullstack-qa-project.git](https://github.com/QualitasPrima/fullstack-qa-project.git)
+    git clone https://github.com/QualitasPrima/fullstack-qa-project.git
 
     # Navigate into the project directory
     cd fullstack-qa-project
