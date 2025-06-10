@@ -98,8 +98,8 @@ Please find the detailed deliverables for each assignment task below:
 
 **Task 3: View the Automation Code:**
 
-    * [E2E UI Test Script](./cypress/e2e/ui/form_submission.cy.ts)
-    * [API Test Script](./cypress/e2e/api/reqres_api.cy.ts)
+* [E2E UI Test Script](./cypress/e2e/ui/form_submission.cy.ts)
+* [API Test Script](./cypress/e2e/api/reqres_api.cy.ts)
 
 ## ⚖️ License
 This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
