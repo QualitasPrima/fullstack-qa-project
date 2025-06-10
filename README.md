@@ -93,8 +93,11 @@ npx cypress run --spec "cypress/e2e/api/**/*.cy.ts"
 Please find the detailed deliverables for each assignment task below:
 
 **Task 1: [View the Full Test Case Checklist](./TEST_CHECKLIST.md)**
+
 **Task 2: [View the Detailed Bug Report](./BUG_REPORT.md)**
+
 **Task 3: View the Automation Code:**
+
     * [E2E UI Test Script](./cypress/e2e/ui/form_submission.cy.ts)
     * [API Test Script](./cypress/e2e/api/reqres_api.cy.ts)
 
