@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+
+# Cypress cache and screenshots/videos
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+cypress/.cache/
+
+# Output logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# IDE settings
+.vscode/
+.idea/
+
+# Optional: compiled JS if you're using tsc separately
+dist/
+build/

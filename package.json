@@ -1,0 +1,30 @@
+{
+  "name": "fullstack-qa-project",
+  "version": "1.0.0",
+  "description": "> **Note:** This project was completed as a home assignment for the QA Engineer role at Loady GmbH on June 10, 2025.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
+    "tsc": "tsc --noEmit"
+  },
+  "keywords": [
+    "cypress",
+    "typescript",
+    "e2e",
+    "testing",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^5.2.2",
+    "@types/node": "^24.0.0",
+    "chai-json-schema": "^1.5.1",
+    "cypress": "^14.4.1",
+    "cypress-file-upload": "^5.0.8",
+    "typescript": "^5.8.3"
+  }
+}

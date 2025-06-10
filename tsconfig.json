@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "lib": ["es6", "dom"],
+      "types": ["cypress", "chai"],
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true
+    },
+    "include": [
+      "cypress/**/*.ts",
+      "cypress/**/*.d.ts"
+    ]
+  }
