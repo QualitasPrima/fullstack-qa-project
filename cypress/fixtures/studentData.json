@@ -1,0 +1,15 @@
+{
+    "firstName": "Test",
+    "lastName": "User1",
+    "email": "testuser1@testexample.com",
+    "gender": "Male",
+    "mobile": "0123456789",
+    "dob": "1984-01-01",
+    "subjects": ["Computer Science", "Maths", "Physics"],
+    "hobbies": ["Sports", "Music"],
+    "picture": "test-image.jpg",
+    "address": "144 Teststrasse, Testville, TS1 2CY",
+    "state": "Haryana",
+    "city": "Panipat"
+  }
+  
