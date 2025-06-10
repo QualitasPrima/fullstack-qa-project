@@ -58,13 +58,13 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
 ├── README.md                 # This main project guide
 └── package.json
 ```
-## ▶️ Setup & Test Execution
+## ⚙️ Setup & Test Execution
 
 **Prerequisites:**
 -   [Node.js](https://nodejs.org/en/) (LTS version)
 -   [Git](https://git-scm.com/downloads)
 
-**1. Installation**
+### 1. Installation
 
 # Clone the repository
 git clone https://github.com/QualitasPrima/fullstack-qa-project.git
@@ -75,7 +75,7 @@ cd fullstack-qa-project
 # Install dependencies
 npm install
 
-**2. Running Tests**
+### 2. Running Tests
 
 # Open the interactive Cypress Test Runner to run tests individually
 npx cypress open
