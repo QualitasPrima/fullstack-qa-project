@@ -8,7 +8,7 @@ The goal of this project is to showcase a professional, scalable, and maintainab
 
 1. **Test Checklist** – A detailed manual test checklist for [DemoQA Practice Form](https://demoqa.com/automation-practice-form)
 2. **Bug Report** – A detailed, actionable bug report in a Jira-style format
-3. **Test Automation:** An advanced automation suite using Cypress, featuring both E2E UI tests for the DemoQA form and a separate suite of API tests for the `reqres.in` API.
+3. **Test Automation:** An advanced automation suite using Cypress, featuring both E2E UI tests for the [DemoQA Practice Form](https://demoqa.com/automation-practice-form) and a separate suite of API tests for the [`reqres.in`](https://reqres.in/) API.
 
 ---
 
