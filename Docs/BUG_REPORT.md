@@ -11,7 +11,7 @@ When a user selects two or more hobbies from the available checkboxes, the form 
 - **Browser:** Chrome v125+, Firefox v126+
 - **Operating System:** Windows 11, macOS Sonoma
 - **Application URL:** `https://demoqa.com/automation-practice-form`
-- **Date Found:** 10 June 2025
+- **Date Found:** 11th June 2025
 
 ## Steps to Reproduce
 
@@ -43,8 +43,8 @@ Consistently Reproducible (100% of the time)
 
 ## Screenshots/Attachments
 
-- `[Placeholder for screen recording/shots showing the bug in action: multiple hobbies selected, submit button clicked, nothing happens]`
-- `[Placeholder for Screenshot of browser console showing any JavaScript errors that appear upon clicking submit]`
+- `[Placeholder for screenshots/recording showing the bug in action: multiple hobbies selected, submit button clicked, nothing happens]`
+- `[Placeholder for browser console logs showing any JavaScript errors that appear upon clicking submit]`
 
 ## Reported by
 

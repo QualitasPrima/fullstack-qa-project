@@ -20,7 +20,7 @@ To verify that a user can successfully submit the student registration form when
 
 1.  The user is using a supported web browser (e.g., Chrome, Firefox).
 2.  The user has successfully navigated to the practice form URL: `https://demoqa.com/automation-practice-form`.
-3.  A sample image file (e.g., `profile.jpg`) is available for upload.
+3.  A sample image file (e.g., `test-image.jpg`) is available for upload.
 
 ## Test Data
 

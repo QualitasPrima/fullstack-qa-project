@@ -7,7 +7,7 @@
     "dob": "1984-01-01",
     "subjects": ["Computer Science", "Maths", "Physics"],
     "hobbies": ["Sports", "Music"],
-    "picture": "test-image.jpg",
+    "picture": "test-image.png",
     "address": "144 Teststrasse, Testville, TS1 2CY",
     "state": "Haryana",
     "city": "Panipat"

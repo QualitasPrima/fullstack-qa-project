@@ -1,4 +1,4 @@
-> **Note:** This project was completed as a home assignment for the QA Engineer role at Loady GmbH on June 10, 2025.
+> **Note:** This project was completed as a home assignment for the QA Engineer role at Loady GmbH on 11th June, 2025.
 
 # Fullstack QA Project: E2E & API Testing
 
@@ -6,9 +6,9 @@
 
 The goal of this project is to showcase a professional, scalable, and maintainable approach to software testing, fulfilling all requirements of the home assignment:
 
-- **Task 1: Test Checklist:** A detailed manual test checklist for the DemoQA Practice Form.
-- **Task 2: Bug Report:** A professionally formatted bug report for a given scenario.
-- **Task 3: Test Automation:** An advanced automation suite using Cypress, featuring both E2E UI tests for the DemoQA form and a separate suite of API tests for the `reqres.in` API.
+1. **Test Checklist** – A detailed manual test checklist for [DemoQA Practice Form](https://demoqa.com/automation-practice-form)
+2. **Bug Report** – A detailed, actionable bug report in a Jira-style format
+3. **Test Automation:** An advanced automation suite using Cypress, featuring both E2E UI tests for the DemoQA form and a separate suite of API tests for the `reqres.in` API.
 
 ---
 
@@ -18,9 +18,9 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
 
 - **Test Strategy & Planning:** Demonstrating initiative by designing a comprehensive test strategy that covers multiple application layers (UI and API) to ensure full-stack quality.
 
-- **Manual Test Case Design:** Creating a detailed and prioritized test checklist that covers a wide range of scenarios including positive, negative, boundary, and usability tests.
+- **Manual Test Case Design:** Creating a detailed and prioritised test checklist that covers a wide range of scenarios including positive, negative, boundary, usability, responsiveness and accessiblity tests.
 
-- **Bug Reporting & Analysis:** Authoring clear, concise, and actionable bug reports in a professional Jira-like format that enables efficient reproduction and resolution.
+- **Bug Reporting & Analysis:** Authoring clear, concise, and actionable bug report in a professional Jira-like format that enables efficient reproduction and resolution.
 
 - **Advanced Test Automation (Cypress & TypeScript):**
 
@@ -33,17 +33,19 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
   - **Reusable Custom Commands** to promote **DRY (Don't Repeat Yourself)** code and significantly improve test readability and maintenance.
   - **Data-Driven Testing** using Cypress fixtures to decouple test data from test logic.
 
-- **Professional Documentation & Version Control:** Creating a well-organized project structure on GitHub with clear documentation (`README`, Test Plans, Bug Reports) and an authentic, descriptive commit history.
+- **Professional Documentation & Version Control:** Creating a well-organized project structure on GitHub with clear documentation (`README`, test case reference, test checklist, bug report) and a descriptive commit history.
 
 ---
 
 ## 🛠️ Tech Stack & Tools
 
-- **Test Automation Framework:** Cypress
-- **Language:** TypeScript
-- **API Validation:** `chai` (bundled with Cypress)
-- **Version Control:** Git & GitHub
-- **Runtime Environment:** Node.js
+| Category       | Tools Used             |
+| -------------- | ---------------------- |
+| Automation     | Cypress + TypeScript   |
+| API Validation | Chai JSON Schema       |
+| Source Control | Git & GitHub           |
+| Runtime        | Node.js (via npm)      |
+| Documentation  | Markdown (`.md` files) |
 
 ---
 
@@ -63,7 +65,7 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
 │   │   │   ├── get-users.schema.ts
 │   │   │   └── update-user.schema.ts
 │   │   ├── studentData.json          # Form test data
-│   │   └── test-image.jpg            # Sample image upload
+│   │   └── test-image.png            # Sample image upload
 │   ├── support/
 │   │   ├── pageObjects/
 │   │   │   └── PracticeFormPage.ts   # Page Object Model for form
@@ -71,17 +73,18 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
 │   │   ├── commands.ts               # Custom Cypress commands
 │   │   ├── e2e.ts                    # Cypress support entry point
 │   │   └── index.d.ts                # Custom TypeScript definitions
+│   └── README.md                     # In-depth guide for the automation framework
 │
 ├── docs/                             # Project documentation (outside Cypress)
-│   ├── TEST_CHECKLIST.md             # Task 1 - Test coverage checklist
-│   ├── BUG_REPORT.md                 # Task 2 - Identified bugs report
-│   └── DQA-TC-001/                   # Manual testcase maps to e2e test
+│   ├── BUG_REPORT.md                 # Task 2 - Identified bug report
+│   ├── DQA-TC-001.md                 # Manual testcase maps to e2e test
+│   └── TEST_CHECKLIST.md             # Task 1 - Test coverage checklist
 │
 ├── .gitignore                        # Git ignored files
 ├── cypress.config.ts                 # Cypress configuration
 ├── LICENSE                           # License file
-├── package.json                      # Project dependencies and scripts
 ├── package-lock.json                 # Dependency lockfile
+├── package.json                      # Project dependencies and scripts
 ├── README.md                         # Project overview and instructions
 └── tsconfig.json                     # TypeScript configuration
 ```
@@ -90,66 +93,57 @@ This project showcases a deep, multi-faceted understanding of modern quality ass
 
 ## ⚙️ Setup & Test Execution
 
-**Prerequisites:**
+### ✅ Prerequisites
 
 - [Node.js](https://nodejs.org/en/) (LTS version)
 - [Git](https://git-scm.com/downloads)
 
-1.  **Installation**
+### 📦 Install & Run
 
-    ```bash
-    # Clone the repository
-    git clone https://github.com/QualitasPrima/fullstack-qa-project.git
+```bash
+# Clone the repository
 
-    # Navigate into the project directory
-    cd fullstack-qa-project
-    # Navigate into the project directory
-    cd fullstack-qa-project
+git clone https://github.com/QualitasPrima/fullstack-qa-project.git
 
-    # Install dependencies
-    npm install
-    ```
+cd fullstack-qa-project
 
-2.  **Running Tests**
+# Install project dependencies
 
-    ```bash
-    # Open the interactive Cypress Test Runner
-    npx cypress open
+npm install
+```
 
-    # Run all tests headlessly in the terminal (ideal for CI)
-    npx cypress run
-    # Run all tests headlessly in the terminal (ideal for CI)
-    npx cypress run
+### ▶️ Running the Tests
 
-    # Run only the UI test suite
-    npx cypress run --spec "cypress/e2e/ui/**/*.cy.ts"
-    # Run only the UI test suite
-    npx cypress run --spec "cypress/e2e/ui/**/*.cy.ts"
+```bash
+# Launch Cypress Test Runner (GUI mode)
 
-    # Run only the API test suite
-    npx cypress run --spec "cypress/e2e/api/**/*.cy.ts"
-    ```
+npx cypress open
 
-    # Run only the API test suite
+# Run all tests in terminal (headless mode)
 
-    npx cypress run --spec "cypress/e2e/api/\*_/_.cy.ts"
+npx cypress run
 
-    ```
+# Run only UI tests
 
-    ```
+npx cypress run --spec "cypress/e2e/ui/**/*.cy.ts"
 
-### 📄 Assignment Artifacts
+# Run only API tests
 
-Please find the detailed deliverables for each assignment task below:
+npx cypress run --spec "cypress/e2e/api/**/*.cy.ts"
+```
 
-**Task 1: [View the Full Test Case Checklist](./TEST_CHECKLIST.md)**
+---
 
-**Task 2: [View the Detailed Bug Report](./BUG_REPORT.md)**
+## 📄 Assignment Deliverables
 
-**Task 3: View the Automation Code:**
+- ✅ **Task 1:** [Manual Test Checklist](./docs/TEST_CHECKLIST.md)
+- 🐞 **Task 2:** [Bug Report](./docs/BUG_REPORT.md)
+- 🤖 **Task 3:**
+  - [UI Test Script](./cypress/e2e/ui/form_submission.cy.ts)
+  - [API Test Script](./cypress/e2e/api/reqres_api.cy.ts)
+  - [Manual Test Case (DQA-TC-001)](./docs/DQA-TC-001.md)
 
-- [E2E UI Test Script](./cypress/e2e/ui/form_submission.cy.ts)
-- [API Test Script](./cypress/e2e/api/reqres_api.cy.ts)
+---
 
 ## ⚖️ License
 
