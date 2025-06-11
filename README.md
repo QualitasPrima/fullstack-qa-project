@@ -138,7 +138,7 @@ npx cypress run --spec "cypress/e2e/api/**/*.cy.ts"
 
 - ✅ **Task 1:** [Manual Test Checklist](./docs/TEST_CHECKLIST.md)
 - 🐞 **Task 2:** [Bug Report](./docs/BUG_REPORT.md)
-- 🤖 **Task 3:**
+- 🤖 **Task 3: Test Automation**
   - [UI Test Script](./cypress/e2e/ui/form_submission.cy.ts)
   - [API Test Script](./cypress/e2e/api/reqres_api.cy.ts)
   - [Manual Test Case (DQA-TC-001)](./docs/DQA-TC-001.md)
